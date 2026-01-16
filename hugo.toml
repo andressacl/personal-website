@@ -2,7 +2,7 @@
 # Core site configuration #
 ############################
 
-baseURL = "https://andressacl.github.io/personal-website/"
+baseURL = "http://localhost:1313/"
 
 # Base URL of the site. For local development use localhost.
 # For deployment (e.g. GitHub Pages), change to your real URL.
