@@ -34,7 +34,7 @@ theme = "PaperMod"
 
 # Enables JSON output required for PaperMod's built-in search.
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 
 ############################
