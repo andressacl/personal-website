@@ -1,7 +1,7 @@
 ############################
 # Core site configuration #
 ############################
-
+publishDir = "docs"
 baseURL = "https://andressacl.github.io/personal-website/"
 
 # Base URL of the site. For local development use localhost.
@@ -74,6 +74,10 @@ theme = "PaperMod"
   # Controls which sections appear on the homepage (important).
   # Here, only content under content/notes/ is promoted.
 
+  canonifyURLs = true
+  relativeURLs = false
+
+
 
 ############################
 # Profile-mode homepage   #
@@ -97,15 +101,15 @@ theme = "PaperMod"
   # Buttons displayed on the homepage
   [[params.profileMode.buttons]]
     name = "Notes"
-    url = "/notes/"
+    url = "notes/"
 
   [[params.profileMode.buttons]]
     name = "Simulations"
-    url = "/simulations/"
+    url = "simulations/"
 
   [[params.profileMode.buttons]]
     name = "About"
-    url = "/about/"
+    url = "about/"
 
 
 ############################
@@ -135,3 +139,4 @@ weight = 30
 name = "About"
 url = "/about/"
 weight = 40
+

@@ -1,3 +1,5 @@
----
-title: "Notes"
----
++++
+title = "Notes"
+draft = false
+layout = "list"
++++
