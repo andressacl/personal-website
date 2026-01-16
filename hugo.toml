@@ -1,0 +1,136 @@
+############################
+# Core site configuration #
+############################
+
+baseURL = "http://localhost:1313/"
+# Base URL of the site. For local development use localhost.
+# For deployment (e.g. GitHub Pages), change to your real URL.
+
+languageCode = "en-us"
+# Language used for site metadata and defaults
+
+title = "Andressa's corner"
+# Global site title, shown in browser tab and metadata.
+
+theme = "PaperMod"
+# Active theme. PaperMod is layout-driven and highly configurable via params.
+
+
+############################
+# Content organization    #
+############################
+
+# Taxonomies automatically generate listing pages:
+# /tags/, /categories/, and their individual term pages.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+
+############################
+# Output formats          #
+############################
+
+# Enables JSON output required for PaperMod's built-in search.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+############################
+# Global theme parameters #
+############################
+
+[params]
+  author = "Andressa"
+  # Used in metadata, footer, and SEO.
+
+  description = "Educational and technical notes in astrophysics."
+  # Meta description for search engines.
+
+  ShowReadingTime = true
+  # Displays estimated reading time on articles.
+
+  ShowToc = true
+  TocOpen = true
+  # Enables and auto-opens the table of contents on pages.
+
+  ShowSearch = true
+  # Enables PaperMod’s built-in client-side search.
+
+  ShowArchives = true
+  # Enables the /archives/ page.
+
+  math = true
+  # Enables math rendering (KaTeX / MathJax, depending on theme defaults).
+
+  hideFooter = true
+  # Removes the footer for a cleaner academic look.
+
+  disableSpecial1stPost = true
+  # Prevents blog-style emphasis on the first post.
+
+  mainSections = ["notes"]
+  # Controls which sections appear on the homepage (important).
+  # Here, only content under content/notes/ is promoted.
+
+
+############################
+# Profile-mode homepage   #
+############################
+
+# This replaces the default blog-style homepage
+# with a centered academic landing page.
+[params.profileMode]
+  enabled = true
+
+  title = "PhD Research Notes"
+  subtitle = "Astrophysics · Cosmic Rays · Simulations"
+
+  imageUrl = "profile.png"
+  # Path relative to /static/
+
+  imageWidth = 160
+  imageHeight = 160
+  imageTitle = "Profile photo"
+
+  # Buttons displayed on the homepage
+  [[params.profileMode.buttons]]
+    name = "Notes"
+    url = "/notes/"
+
+  [[params.profileMode.buttons]]
+    name = "Simulations"
+    url = "/simulations/"
+
+  [[params.profileMode.buttons]]
+    name = "About"
+    url = "/about/"
+
+
+############################
+# Main navigation menu    #
+############################
+
+# The menu is independent of content existence.
+# URLs must match sections or pages you create.
+
+[[menu.main]]
+name = "Notes"
+url = "/notes/"
+weight = 10
+# Lower weight = earlier in menu.
+
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+name = "Archives"
+url = "/archives/"
+weight = 30
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 40
