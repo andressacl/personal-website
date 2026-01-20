@@ -91,12 +91,14 @@ theme = "PaperMod"
   title = "PhD Research Notes"
   subtitle = "Astrophysics · Cosmic Rays · Simulations"
 
-  imageUrl = "profile.png"
+  imageUrl = "images/profile.png"
   # Path relative to /static/
 
   imageWidth = 160
   imageHeight = 160
   imageTitle = "Profile photo"
+  imageAlt = "Centaurus A radio galaxy"
+
 
   # Buttons displayed on the homepage
   [[params.profileMode.buttons]]
@@ -110,6 +112,24 @@ theme = "PaperMod"
   [[params.profileMode.buttons]]
     name = "About"
     url = "about/"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/andressacl"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/andressa-colaço-13953639a"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:andressacolaco@usp.br"
+
+  [[params.socialIcons]]
+  name = "orcid"
+  url = "https://orcid.org/0009-0000-7751-8236"
+
+
 
 
 ############################
@@ -129,6 +149,12 @@ weight = 10
 name = "Tags"
 url = "/tags/"
 weight = 20
+
+[[menu.main]]
+name = "Publications"
+url = "/publications/"
+weight = 35
+
 
 [[menu.main]]
 name = "Archives"
