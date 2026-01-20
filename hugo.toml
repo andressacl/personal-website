@@ -74,8 +74,8 @@ theme = "PaperMod"
   # Controls which sections appear on the homepage (important).
   # Here, only content under content/notes/ is promoted.
 
-  canonifyURLs = true
-  relativeURLs = false
+  canonifyURLs = false
+  relativeURLs = true
 
 
 
